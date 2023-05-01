@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Auth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Auth</h1>
+        <form method="POST" action="{{ url_for('form') }}">
+            <label for="bit">Bit:</label>
+            <input type="text" id="bit" name="bit" required>
+            <label for="k">K:</label>
+            <input type="text" id="k" name="k" required>
+            <label for="len">Length:</label>
+            <input type="text" id="len" name="len" required>
+            <button type="submit">create_auth</button>
+        </form>
+{#        <form action="{{ url_for('thankyou') }}">#}
+{#            <button type="submit">show</button>#}
+{#        </form>#}
+    </div>
+</body>
+</html>
